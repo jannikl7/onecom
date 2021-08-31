@@ -13,7 +13,7 @@ import java.time.temporal.ChronoUnit;
  * The purpose of this program is to offer a solution without using any
  * date libraries.
  * NOTE: A confirmation via Chronounit is done and printed to console only as
- * validation of the result and is NOT part of the initial calculation.
+ * verification of the result and is NOT part of the initial calculation.
  *
  *
  */
@@ -58,7 +58,7 @@ public class Main {
         System.out.printf("Total number of days between %s and %s: %s%n", args[0], args[1], accumDays);
 
 
-        // Confirmation using Chronounit
+        // Verification using Chronounit
         try {
             LocalDate startDate2 = LocalDate.parse(args[0], DateTimeFormatter.ofPattern("dd/MM/yyyy"));
             LocalDate endDate2 = LocalDate.parse(args[1], DateTimeFormatter.ofPattern("dd/MM/yyyy"));
