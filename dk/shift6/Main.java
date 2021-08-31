@@ -64,7 +64,7 @@ public class Main {
     }
 
     /**
-     * method for finding the length of a month taking leap rules into account
+     * This method will find the length of a month taking leap rules into account
      * @param month Month identified by position 1-12
      * @param year Year in format YYYY
      * @return Length of month in days
