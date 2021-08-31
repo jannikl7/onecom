@@ -52,7 +52,7 @@ public class Main {
         System.out.printf("Total number of days between %s and %s: %s%n", args[0], args[1], accumDays);
 
 
-        // Check using Chronounit
+        // Confirmation using Chronounit
         try {
             LocalDate startDate2 = LocalDate.parse(args[0], DateTimeFormatter.ofPattern("dd/MM/yyyy"));
             LocalDate endDate2 = LocalDate.parse(args[1], DateTimeFormatter.ofPattern("dd/MM/yyyy"));
@@ -72,9 +72,8 @@ public class Main {
     private static int getMonthLength(int month, int year) {
         int m = month - 1;
         if (m == 1) {
-            return year % 4 == 0 && (year % 100 > 0 || year % 400 == 0)
-                    ? months[m] + 1
-                    : months[m];
+            return year % 4 == 0 && (year % 100 > 0 || year % 400 == 0) ?
+                    months[m] + 1 : months[m];
         }
         return months[m];
     }
