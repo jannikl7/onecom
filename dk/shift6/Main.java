@@ -10,6 +10,12 @@ import java.time.temporal.ChronoUnit;
  *
  * Example: java dk.shift6.Main 12/11/1975 31/08/2021
  *
+ * The purpose of this program is to offer a solution without using any
+ * date libraries.
+ * NOTE: A confirmation via Chronounit is done and printed to console only as
+ * validation of the result and is NOT part of the initial calculation.
+ *
+ *
  */
 
 public class Main {
@@ -56,7 +62,7 @@ public class Main {
         try {
             LocalDate startDate2 = LocalDate.parse(args[0], DateTimeFormatter.ofPattern("dd/MM/yyyy"));
             LocalDate endDate2 = LocalDate.parse(args[1], DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-            System.out.println("Days between according to ChronoUnit: " + ChronoUnit.DAYS.between(startDate2, endDate2));
+            System.out.println("VERIFICATION via ChronoUnit: " + ChronoUnit.DAYS.between(startDate2, endDate2));
         } catch (Exception e)
         {
             System.out.println("DateTimeException during the Chronounit check. Remember year should be >= 0001");
