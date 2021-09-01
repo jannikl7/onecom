@@ -65,7 +65,7 @@ public class Main {
             System.out.println("VERIFICATION via ChronoUnit: " + ChronoUnit.DAYS.between(startDate2, endDate2));
         } catch (Exception e)
         {
-            System.out.println("DateTimeException during the Chronounit check. Remember year should be >= 0001");
+            System.out.println("Exception during the Chronounit check. Remember year should be >= 0001");
         }
     }
 
