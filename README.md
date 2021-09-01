@@ -8,5 +8,5 @@ Example: java dk.shift6.Main 12/11/1975 31/08/2021
 The purpose of this program is to offer a solution without using any
 date libraries.
 
-NOTE: A confirmation via Chronounit is done and printed to console only as
-verification of the result and is NOT part of the initial calculation.
+NOTE: A Chronounit verification is done and printed to console as a
+verification only and is NOT part of the initial calculation.
